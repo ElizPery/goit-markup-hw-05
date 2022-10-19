@@ -21,7 +21,7 @@
                     <span class="logo accent">Web</span>Studio
                 </a>
                 <ul class="nav-list style-list">
-                    <li class="item"><a href="./index.html" class="list current">Студія</a></li>
+                    <li class="item"><a href="./index.html" class="list current first">Студія</a></li>
                     <li class="item"><a href="./portfolio.html" class="list">Портфоліо</a></li>
                     <li class="item"><a href="" class="list">Контакти</a></li>
                 </ul>
@@ -49,7 +49,7 @@
         <section class="overlay">
             <div class="hero">
                 <h1 class="hero-title">Ефективні рішення для вашего бізнеса</h1>
-                <button type="button" class="btn-hero">Замовити послугу</button>
+                <button data-modal-open type="button" class="btn-hero">Замовити послугу</button>
             </div>
         </section>
 
@@ -102,13 +102,22 @@
                 <h2 class="work-title">Чим ми займаємося</h2>
                 <ul class="work-list style-list">
                     <li class="work-card">
-                        <img src="./images/do1.jpg" alt="Працююча людина з планшетом, набирає код" width="370" class="img-space-no">
+                        <div class="work-thumb">
+                            <img src="./images/do1.jpg" alt="Працююча людина з планшетом, набирає код" width="370" class="img-space-no">
+                            <h3 class="work-descr">Десктопні додатки</h3>
+                        </div>
                     </li>
                     <li class="work-card">
-                        <img src="./images/do2.jpg" alt="Людина працює з телефоном та ноутбуком, на екрані дизайн блоків" width="370" class="img-space-no">
+                        <div class="work-thumb">
+                            <img src="./images/do2.jpg" alt="Людина працює з телефоном та ноутбуком, на екрані дизайн блоків" width="370" class="img-space-no">
+                            <h3 class="work-descr">Мобільні додатки</h3>
+                        </div>
                     </li>
                     <li class="work-card">
-                        <img src="./images/do3.jpg" alt="Людина з планшетом, на екрані кольорова палітра" width="370" class="img-space-no">
+                        <div class="work-thumb">
+                            <img src="./images/do3.jpg" alt="Людина з планшетом, на екрані кольорова палітра" width="370" class="img-space-no">
+                            <h3 class="work-descr">Дизайнерські рішення</h3>
+                        </div>
                     </li>
                 </ul>
                 </div>
@@ -371,6 +380,13 @@
         </div>
     </footer>
 
-    
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="close-btn"> 
+                <div><img src="./images/close.svg"></div>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
